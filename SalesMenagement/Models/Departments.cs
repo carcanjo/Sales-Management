@@ -7,7 +7,7 @@ namespace SalesMenagement.Models
 {
     public class Departments
     {
-        public int DepartamentsId { get; set; }
+        public int Id { get; set; }
         public string NameDepartaments { get; set; }
     }
 }
