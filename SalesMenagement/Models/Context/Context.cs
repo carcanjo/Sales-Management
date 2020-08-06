@@ -8,7 +8,11 @@ namespace SalesMenagement.Models.Context
 {
     public class Context : DbContext
     {
-        public Context(DbContextOptions<Context> options) : base(options){}
+        public Context(DbContextOptions<Context> options) : base(options) { }
         public DbSet<Departments> Departments { get; set; }
+        public DbSet<SalesRecord> SalesRecord { get; set; }
+        public DbSet<Seller> Seller { get; set; }
+
+
     }
 }
