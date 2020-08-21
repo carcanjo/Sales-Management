@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SalesMenagement.Models.Context;
+using SalesMenagement.Services;
 
 namespace SalesMenagement
 {
@@ -36,6 +37,9 @@ namespace SalesMenagement
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             //AQUI FAÇO A CONEXÃO COM O BANDO DE DADOS SQL SERVER
             services.AddDbContext<Context>(x => x.UseSqlServer(Configuration.GetConnectionString("Connection")));
+
+            //adicionando a classe na injeção de dependencia
+            services.AddScoped<SellerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
