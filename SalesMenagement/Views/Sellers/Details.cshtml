@@ -34,9 +34,15 @@
         <dd>
             @Html.DisplayFor(model => model.BaseSalary)
         </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Departments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Departments.NameDepartaments)
+        </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-default">Edit</a> |
+    <a asp-action="Index" class="btn btn-info">Back to List</a>
 </div>

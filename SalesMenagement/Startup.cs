@@ -40,6 +40,7 @@ namespace SalesMenagement
 
             //adicionando a classe na injeção de dependencia
             services.AddScoped<SellerService>();
+            services.AddScoped<DepartmentServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

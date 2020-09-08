@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cleiton\\Desktop\\SalesMenagement\\SalesMenagement\\SalesMenagement.csproj": {}
+    "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\repo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cleiton\\Desktop\\SalesMenagement\\SalesMenagement\\SalesMenagement.csproj": {
+    "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\repo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cleiton\\Desktop\\SalesMenagement\\SalesMenagement\\SalesMenagement.csproj",
+        "projectUniqueName": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\repo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
         "projectName": "SalesMenagement",
-        "projectPath": "C:\\Users\\Cleiton\\Desktop\\SalesMenagement\\SalesMenagement\\SalesMenagement.csproj",
-        "packagesPath": "C:\\Users\\Cleiton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cleiton\\Desktop\\SalesMenagement\\SalesMenagement\\obj\\",
+        "projectPath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\repo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
+        "packagesPath": "C:\\Users\\cleit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\repo\\Sales-Management\\SalesMenagement\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Cleiton\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\cleit\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +73,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
