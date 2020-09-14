@@ -12628,11 +12628,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\repo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
+      "projectUniqueName": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
       "projectName": "SalesMenagement",
-      "projectPath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\repo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
+      "projectPath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
       "packagesPath": "C:\\Users\\cleit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\repo\\Sales-Management\\SalesMenagement\\obj\\",
+      "outputPath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\Sales-Management\\SalesMenagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

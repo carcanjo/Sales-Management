@@ -1,4 +1,15 @@
+# ignorar pasta svn
+/.svn/
+.pdb
+.cache
+.suo
+obj
+packages
+bin
 
-.vs/SalesMenagement/v16/.suo
-SalesMenagement/obj/Debug/netcoreapp2.1/SalesMenagement.csprojAssemblyReference.cache
-.vs/SalesMenagement/v16/.suo
+# ignorar extens�o de arquivos
+*.svn
+.vs
+.vscode
+/Sistemas/WMS/Fontes WMS/.vs/WMS/v16/Server/sqlite3
+*.user

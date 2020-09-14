@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "csGEqcmyQH5+dHu9+VBbLJSwzOIRHPhHaJTBBTaei1KkPIEsz0RlUaAhagcs27llsIIECEolKlM2LpGo1D89oA==",
+  "dgSpecHash": "p/MWUd8p+YralxoE0kK2QuVnAHFoalvCCbDfSm9s16gKUFGSymH1ogT1boRN/lwtwPpcx6PhxpvQhQ/YxQUbYQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\repo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
+  "projectFilePath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\cleit\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore\\2.1.1\\microsoft.aspnetcore.2.1.1.nupkg.sha512",
