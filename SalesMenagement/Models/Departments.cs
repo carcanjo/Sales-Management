@@ -9,7 +9,7 @@ namespace SalesMenagement.Models
     public class Departments
     {
         public int Id { get; set; }
-        [Display(Name ="Name Departaments")]
+        [Display(Name ="Name Departments")]
         public string NameDepartaments { get; set; }
         public ICollection<Seller> Sellers { get; set; } = new List<Seller>();
 

@@ -40,7 +40,7 @@ namespace SalesMenagement.Services
         {
             try
             {
-                var obj = _context.Seller.FindAsync(id);
+                var obj = await _context.Seller.FindAsync(id);
                 _context.Remove(obj);
                 await _context.SaveChangesAsync();
             }
