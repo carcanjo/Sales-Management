@@ -67,7 +67,7 @@ using SalesMenagement.Models;
             WriteLiteral("\r\n    <h2>Sellers</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(131, 74, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9561032e84cd4592a8a2e460a15ffa07", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4e786db137ae4b03b0dd96b0e46032f0", async() => {
                 BeginContext(184, 17, true);
                 WriteLiteral("Create New Seller");
                 EndContext();
@@ -179,7 +179,7 @@ using SalesMenagement.Models;
             WriteLiteral("\r\n                </td>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(1315, 53, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "be3e2ffa6373460abb010ecea04013e0", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47e43da8853e47be9e9ebf3548ac4c03", async() => {
                 BeginContext(1360, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -214,7 +214,7 @@ using SalesMenagement.Models;
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(1392, 59, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "65f99d86ad3943f8b4d279107a033f1f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "726b74ec77144d35acaae1636773491c", async() => {
                 BeginContext(1440, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -249,7 +249,7 @@ using SalesMenagement.Models;
             WriteLiteral(" |\r\n                    ");
             EndContext();
             BeginContext(1475, 57, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "292d02c128ed48879f81b44a79d510f7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f40ea7dadd1b45538f83676c997ba99c", async() => {
                 BeginContext(1522, 6, true);
                 WriteLiteral("Delete");
                 EndContext();

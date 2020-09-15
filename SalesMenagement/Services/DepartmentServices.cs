@@ -1,4 +1,5 @@
-﻿using SalesMenagement.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using SalesMenagement.Models;
 using SalesMenagement.Models.Context;
 using System;
 using System.Collections.Generic;
@@ -15,10 +16,9 @@ namespace SalesMenagement.Services
             _context = context;
         }
 
-        public List<Departments> FindAll()
+        public async Task<List<Departments>> FindAllAsync()
         {
-            return _context.Departments.OrderBy(x => x.NameDepartaments).ToList();
+            return await  _context.Departments.OrderBy(x => x.NameDepartaments).ToListAsync();
         }
-
     }
 }
