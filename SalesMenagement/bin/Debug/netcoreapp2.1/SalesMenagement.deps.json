@@ -24,16 +24,102 @@
     ".NETCoreApp,Version=v2.1": {
       "SalesMenagement/1.0.0": {
         "dependencies": {
+          "Font.Awesome": "5.14.0.1",
+          "FontAwesome": "4.7.0",
+          "FontAwesome.MVC": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
           "Microsoft.NETCore.App": "2.1.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.1.10",
+          "font-awesome": "4.7.0"
         },
         "runtime": {
           "SalesMenagement.dll": {}
         },
         "compile": {
           "SalesMenagement.dll": {}
+        }
+      },
+      "font-awesome/4.7.0": {},
+      "Font.Awesome/5.14.0.1": {},
+      "FontAwesome/4.7.0": {},
+      "FontAwesome.MVC/1.0.0": {
+        "dependencies": {
+          "FontAwesome": "4.7.0",
+          "Microsoft.AspNet.Mvc": "3.0.20105.1",
+          "Microsoft.AspNet.Web.Optimization": "1.0.0",
+          "WebActivatorEx": "2.0.0"
+        }
+      },
+      "Microsoft.AspNet.Mvc/3.0.20105.1": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "1.0.20105.408",
+          "Microsoft.AspNet.WebPages": "1.0.20105.408"
+        },
+        "runtime": {
+          "lib/net40/System.Web.Mvc.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.0.20105.0"
+          }
+        },
+        "compile": {
+          "lib/net40/System.Web.Mvc.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Razor/1.0.20105.408": {
+        "runtime": {
+          "lib/net40/System.Web.Razor.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20105.407"
+          }
+        },
+        "compile": {
+          "lib/net40/System.Web.Razor.dll": {}
+        }
+      },
+      "Microsoft.AspNet.Web.Optimization/1.0.0": {
+        "dependencies": {
+          "Microsoft.Web.Infrastructure": "1.0.0",
+          "WebGrease": "1.1.0"
+        },
+        "runtime": {
+          "lib/net40/System.Web.Optimization.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/System.Web.Optimization.dll": {}
+        }
+      },
+      "Microsoft.AspNet.WebPages/1.0.20105.408": {
+        "dependencies": {
+          "Microsoft.AspNet.Razor": "1.0.20105.408",
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "lib/net40/System.Web.Helpers.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20105.407"
+          },
+          "lib/net40/System.Web.WebPages.Deployment.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20105.407"
+          },
+          "lib/net40/System.Web.WebPages.Razor.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20105.407"
+          },
+          "lib/net40/System.Web.WebPages.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20105.407"
+          }
+        },
+        "compile": {
+          "lib/net40/System.Web.Helpers.dll": {},
+          "lib/net40/System.Web.WebPages.Deployment.dll": {},
+          "lib/net40/System.Web.WebPages.Razor.dll": {},
+          "lib/net40/System.Web.WebPages.dll": {}
         }
       },
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
@@ -192,6 +278,17 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll": {}
         }
       },
+      "Microsoft.Web.Infrastructure/1.0.0": {
+        "runtime": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.20105.407"
+          }
+        },
+        "compile": {
+          "lib/net40/Microsoft.Web.Infrastructure.dll": {}
+        }
+      },
       "NuGet.Frameworks/4.7.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.3"
@@ -341,6 +438,36 @@
           "System.Runtime.Extensions": "4.3.0",
           "System.Threading": "4.3.0",
           "System.Threading.Tasks": "4.3.0"
+        }
+      },
+      "WebActivatorEx/2.0.0": {
+        "dependencies": {
+          "Microsoft.Web.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "lib/net40/WebActivatorEx.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/net40/WebActivatorEx.dll": {}
+        }
+      },
+      "WebGrease/1.1.0": {
+        "runtime": {
+          "lib/Antlr3.Runtime.dll": {
+            "assemblyVersion": "3.3.1.7705",
+            "fileVersion": "3.3.1.7705"
+          },
+          "lib/WebGrease.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/Antlr3.Runtime.dll": {},
+          "lib/WebGrease.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3472,6 +3599,62 @@
       "serviceable": false,
       "sha512": ""
     },
+    "font-awesome/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MCuSOl63d8b9Etn7Jm4FJS1lp8d8W9fGwQ6xu5SqrRu8e/p+FZv2a8W/LguziecV1ZpTqZPamG5nfmZs28SahA==",
+      "path": "font-awesome/4.7.0",
+      "hashPath": "font-awesome.4.7.0.nupkg.sha512"
+    },
+    "Font.Awesome/5.14.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-je9HV6fLcgqfdFUnQg81aDY5AaqeuCGeHFRWZxFhbB7ny1480C5lL/3eYGj1h3+CctCXxRVc7hUQ72t3O7WPCA==",
+      "path": "font.awesome/5.14.0.1",
+      "hashPath": "font.awesome.5.14.0.1.nupkg.sha512"
+    },
+    "FontAwesome/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-n4H/brfszElyoZ4kmGh8E75uqvLzLvFr3h2PFVdPH1LwUmWIpeqdaW2pcC4oZAhg7sESyObh0IZpAI8COCNeUg==",
+      "path": "fontawesome/4.7.0",
+      "hashPath": "fontawesome.4.7.0.nupkg.sha512"
+    },
+    "FontAwesome.MVC/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LCPon1MUBWEGIdflToR7R8RkuAPKOOb1MEDesA1flFuRRry81OQ9A0aCVNnuBTMG38+RYDxCLNi347+q+m900w==",
+      "path": "fontawesome.mvc/1.0.0",
+      "hashPath": "fontawesome.mvc.1.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Mvc/3.0.20105.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CjEb1ExBqe3DceDCg4EhdimdoDTMuBOmA490lRKgl3EN8L4G8+lBRHDF7Ho8QkFsY7C5Y4pTfqhD7Zl8VPOtWQ==",
+      "path": "microsoft.aspnet.mvc/3.0.20105.1",
+      "hashPath": "microsoft.aspnet.mvc.3.0.20105.1.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Razor/1.0.20105.408": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vRmwL/G31Xc9DusVQUJXmDpTYEVB7xUoIjKqCyuOHrCyG9kzM66MadNjdPLzplSsDoWqiae35US8XiiI3e6SBw==",
+      "path": "microsoft.aspnet.razor/1.0.20105.408",
+      "hashPath": "microsoft.aspnet.razor.1.0.20105.408.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Web.Optimization/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4pMO9b/F9A2iQHcom3ruqNxK023iynMTA621M7Hr0TWMxSxqM2g8Soc0FRRETTEhVVcKlOMPhA6yNtSXh+xikQ==",
+      "path": "microsoft.aspnet.web.optimization/1.0.0",
+      "hashPath": "microsoft.aspnet.web.optimization.1.0.0.nupkg.sha512"
+    },
+    "Microsoft.AspNet.WebPages/1.0.20105.408": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-da1//kx0b6GXJG6V8vGl7PmvhPJE/aNs2mK0QJ9bojgy059BDdYhmAwpTT1ucDgbImbFDdmNGi/XJj2SU0QJeA==",
+      "path": "microsoft.aspnet.webpages/1.0.20105.408",
+      "hashPath": "microsoft.aspnet.webpages.1.0.20105.408.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
       "serviceable": true,
@@ -3549,6 +3732,13 @@
       "path": "microsoft.visualstudio.web.codegenerators.mvc/2.1.10",
       "hashPath": "microsoft.visualstudio.web.codegenerators.mvc.2.1.10.nupkg.sha512"
     },
+    "Microsoft.Web.Infrastructure/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FNmvLn5m2LTU/Rs2KWVo0SIIh9Ek+U0ojex7xeDaSHw/zgEP77A8vY5cVWgUtBGS8MJfDGNn8rpXJWEIQaPwTg==",
+      "path": "microsoft.web.infrastructure/1.0.0",
+      "hashPath": "microsoft.web.infrastructure.1.0.0.nupkg.sha512"
+    },
     "NuGet.Frameworks/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -3604,6 +3794,20 @@
       "sha512": "sha512-td7x21K8LalpjTWCzW/nQboQIFbq9i0r+PCyBBCdLWWnm4NBcdN18vpz/G9hCpUaCIfRL+ZxJNVTywlNlB1aLQ==",
       "path": "system.linq.parallel/4.3.0",
       "hashPath": "system.linq.parallel.4.3.0.nupkg.sha512"
+    },
+    "WebActivatorEx/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B3ZbOEaGCqa7BLjZZw6wqprOJJMvP39h7Lr5ADkJOCPKHppAaCre34kR63/gfgpM4htzTfgm/pEw7r7qqqMgIA==",
+      "path": "webactivatorex/2.0.0",
+      "hashPath": "webactivatorex.2.0.0.nupkg.sha512"
+    },
+    "WebGrease/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Pg2FRRKLgcv6TjTJh/zJTLNICDdw638Z05eKEC/pBejBcvTDsUDB2dWjiXF4DWwfS5K7t2T2gbqO1/UNpMHsug==",
+      "path": "webgrease/1.1.0",
+      "hashPath": "webgrease.1.1.0.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

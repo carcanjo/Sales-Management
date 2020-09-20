@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {}
+    "C:\\Users\\Cleiton\\Desktop\\Sales\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {
+    "C:\\Users\\Cleiton\\Desktop\\Sales\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
+        "projectUniqueName": "C:\\Users\\Cleiton\\Desktop\\Sales\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
         "projectName": "SalesMenagement",
-        "projectPath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
-        "packagesPath": "C:\\Users\\cleit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\Sales-Management\\SalesMenagement\\obj\\",
+        "projectPath": "C:\\Users\\Cleiton\\Desktop\\Sales\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
+        "packagesPath": "C:\\Users\\Cleiton\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Cleiton\\Desktop\\Sales\\Sales-Management\\SalesMenagement\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\cleit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cleiton\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,6 +38,18 @@
       "frameworks": {
         "netcoreapp2.1": {
           "dependencies": {
+            "Font.Awesome": {
+              "target": "Package",
+              "version": "[5.14.0.1, )"
+            },
+            "FontAwesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            },
+            "FontAwesome.MVC": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -61,6 +70,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[2.1.10, )"
+            },
+            "font-awesome": {
+              "target": "Package",
+              "version": "[4.7.0, )"
             }
           },
           "imports": [
@@ -73,7 +86,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
