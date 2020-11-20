@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using SalesMenagement.Models;
 using SalesMenagement.Models.ViewModel;
 using SalesMenagement.Services;
+using ServiceCorreios;
 
 namespace SalesMenagement.Controllers
 {
@@ -126,7 +128,7 @@ namespace SalesMenagement.Controllers
             {
                 await _sellerServices.UpdateAsync(seller);
             }
-            catch (Exception ex)
+            catch (System.Exception ex)
             {
                 return RedirectToAction(nameof(Error), new { messege = ex.Message });
             }
@@ -141,6 +143,23 @@ namespace SalesMenagement.Controllers
                 RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier
             };
             return View(viewModel);
+        }
+
+        public async Task<JsonResult> ObterEnderecoCompleto(string cep)
+        {
+            try
+            {
+                AtendeClienteClient webService = new AtendeClienteClient();
+
+                var result = await webService.consultaCEPAsync(cep);
+
+                return Json(JsonConvert.SerializeObject(result));
+
+            }
+            catch (System.Exception)
+            {
+                return Json(null);
+            }
         }
     }
 }

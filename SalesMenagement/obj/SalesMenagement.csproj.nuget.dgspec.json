@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Cleiton\\Desktop\\Sales\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {}
+    "C:\\Users\\Cleiton\\Desktop\\Repository\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Cleiton\\Desktop\\Sales\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {
+    "C:\\Users\\Cleiton\\Desktop\\Repository\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Cleiton\\Desktop\\Sales\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
+        "projectUniqueName": "C:\\Users\\Cleiton\\Desktop\\Repository\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
         "projectName": "SalesMenagement",
-        "projectPath": "C:\\Users\\Cleiton\\Desktop\\Sales\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
+        "projectPath": "C:\\Users\\Cleiton\\Desktop\\Repository\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
         "packagesPath": "C:\\Users\\Cleiton\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Cleiton\\Desktop\\Sales\\Sales-Management\\SalesMenagement\\obj\\",
+        "outputPath": "C:\\Users\\Cleiton\\Desktop\\Repository\\Sales-Management\\SalesMenagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Cleiton\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,15 +40,11 @@
           "dependencies": {
             "Font.Awesome": {
               "target": "Package",
-              "version": "[5.14.0.1, )"
+              "version": "[5.15.1, )"
             },
             "FontAwesome": {
               "target": "Package",
               "version": "[4.7.0, )"
-            },
-            "FontAwesome.MVC": {
-              "target": "Package",
-              "version": "[1.0.0, )"
             },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -71,9 +67,33 @@
               "target": "Package",
               "version": "[2.1.10, )"
             },
+            "System.ServiceModel.Duplex": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "System.ServiceModel.Http": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "System.ServiceModel.NetTcp": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "System.ServiceModel.Security": {
+              "target": "Package",
+              "version": "[4.4.*, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
             "font-awesome": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "toastr": {
+              "target": "Package",
+              "version": "[2.1.1, )"
             }
           },
           "imports": [

@@ -4,50 +4,108 @@
     ViewData["Title"] = "Create";
 }
 
-<h2>Create</h2>
+<div class="container">
+    <h2>Novo vendedor</h2>
 
-<h4>Seller</h4>
+    <h4>Vendedores</h4>
+</div>
 <hr />
 <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-12">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Seller.Name" class="control-label"></label>
-                <input asp-for="Seller.Name" class="form-control" />
-                <span asp-validation-for="Seller.Name" class="text-danger"></span>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Seller.Name" class="control-label"></label>
+                    <input asp-for="Seller.Name" class="form-control" />
+                    <span asp-validation-for="Seller.Name" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Seller.Email" class="control-label"></label>
-                <input asp-for="Seller.Email" class="form-control" />
-                <span asp-validation-for="Seller.Email" class="text-danger"></span>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Seller.Email" class="control-label"></label>
+                    <input asp-for="Seller.Email" class="form-control" />
+                    <span asp-validation-for="Seller.Email" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Seller.BirthDate" class="control-label"></label>
-                <input asp-for="Seller.BirthDate" class="form-control" />
-                <span asp-validation-for="Seller.BirthDate" class="text-danger"></span>
+            <div class="col-md-6">
+
+                <div class="form-group">
+                    <label asp-for="Seller.BirthDate" class="control-label"></label>
+                    <input asp-for="Seller.BirthDate" class="form-control" />
+                    <span asp-validation-for="Seller.BirthDate" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Seller.BaseSalary" class="control-label"></label>
-                <input asp-for="Seller.BaseSalary" class="form-control" />
-                <span asp-validation-for="Seller.BaseSalary" class="text-danger"></span>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Seller.BaseSalary" class="control-label"></label>
+                    <input asp-for="Seller.BaseSalary" class="form-control" />
+                    <span asp-validation-for="Seller.BaseSalary" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label asp-for="Seller.DepartmentsId" class="control-label"></label>
-                <select asp-for="Seller.DepartmentsId" asp-items="@(new SelectList(Model.Departments, "Id", "NameDepartaments" ))"  class="form-control"></select>
-                <span asp-validation-for="Seller.DepartmentsId" class="text-danger"></span>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="Seller.DepartmentsId" class="control-label"></label>
+                    <select asp-for="Seller.DepartmentsId" asp-items="@(new SelectList(Model.Departments, "Id", "NameDepartaments" ))" class="form-control"></select>
+                    <span asp-validation-for="Seller.DepartmentsId" class="text-danger"></span>
+                </div>
             </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label class="control-label"> CEP</label>
+                    <input type="text" class="form-control" id="validaCEP" />
+                    <span asp-validation-for="Seller.DepartmentsId" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" value="Salvar" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-info"><i class="far fa-arrow-alt-circle-left"></i> Voltar</a>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index" class="btn btn-info">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+<script type="text/javascript">
+
+
+        $('#validaCEP').blur(function () {
+            ObterEnderecoCompleto($(this).val())
+        });
+
+
+        function ObterEnderecoCompleto(cep) {
+
+             $.ajax({
+                url: '@Url.Action("ObterEnderecoCompleto", "Sellers")',
+                method: 'GET',
+                dataType: 'json',
+                data: 'cep=' + cep,
+                cache: false,
+                success: function (data) {
+
+                    let cidade = data[0]["cep"];
+                    let cep = data["cep"];
+                    alert(data);
+                    alert(cidade);
+                    alert(cep);
+
+                },
+                error: function () {
+                    alert('Erro ao fazer a requisição');
+                }
+            });
+
+        }
+
+</script>
+
+
+
 }
+
+
