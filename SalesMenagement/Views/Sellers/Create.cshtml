@@ -15,7 +15,7 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="Seller.Name" class="control-label"></label>
                     <input asp-for="Seller.Name" class="form-control" />
@@ -30,34 +30,67 @@
                 </div>
             </div>
             <div class="col-md-6">
-
                 <div class="form-group">
                     <label asp-for="Seller.BirthDate" class="control-label"></label>
                     <input asp-for="Seller.BirthDate" class="form-control" />
                     <span asp-validation-for="Seller.BirthDate" class="text-danger"></span>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <div class="form-group">
                     <label asp-for="Seller.BaseSalary" class="control-label"></label>
                     <input asp-for="Seller.BaseSalary" class="form-control" />
                     <span asp-validation-for="Seller.BaseSalary" class="text-danger"></span>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <div class="form-group">
                     <label asp-for="Seller.DepartmentsId" class="control-label"></label>
                     <select asp-for="Seller.DepartmentsId" asp-items="@(new SelectList(Model.Departments, "Id", "NameDepartaments" ))" class="form-control"></select>
                     <span asp-validation-for="Seller.DepartmentsId" class="text-danger"></span>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
                 <div class="form-group">
-                    <label class="control-label"> CEP</label>
-                    <input type="text" class="form-control" id="validaCEP" />
+                    <label asp-for="Seller.CEP" class="control-label"> </label>
+                    <input asp-for="Seller.CEP"  class="form-control" id="validaCEP" />
+                    <span asp-validation-for="Seller.CEP" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label"> Número</label>
+                    <input type="text" class="form-control" id="inputNumero" />
                     <span asp-validation-for="Seller.DepartmentsId" class="text-danger"></span>
                 </div>
             </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label"> Cidade</label>
+                    <input type="text" class="form-control" id="inputCidade" readonly />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label"> Endereço</label>
+                    <input type="text" class="form-control" id="inputEndereco" readonly />
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label"> Bairro</label>
+                    <input type="text" class="form-control" id="inputBairro" readonly />
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label class="control-label"> UF</label>
+                    <input type="text" class="form-control" id="inputUf" readonly />
+                </div>
+            </div>
+
+
             <div class="col-md-12">
                 <input type="submit" value="Salvar" class="btn btn-success" />
                 <a asp-action="Index" class="btn btn-info"><i class="far fa-arrow-alt-circle-left"></i> Voltar</a>
@@ -70,39 +103,44 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
 
         $('#validaCEP').blur(function () {
+            $('#inputBairro').val('');
+            $('#inputEndereco').val('');
+            $('#inputCidade').val('');
+            $('#inputUf').val('');
+
             ObterEnderecoCompleto($(this).val())
         });
 
 
         function ObterEnderecoCompleto(cep) {
-
              $.ajax({
                 url: '@Url.Action("ObterEnderecoCompleto", "Sellers")',
                 method: 'GET',
                 dataType: 'json',
                 data: 'cep=' + cep,
                 cache: false,
-                success: function (data) {
+                 success: function (data) {
+                     let cidade = data.return.cidade;
+                     let bairro = data.return.complemento2;
+                     let endereco = data.return.end;
+                     let uf = data.return.uf;
 
-                    let cidade = data[0]["cep"];
-                    let cep = data["cep"];
-                    alert(data);
-                    alert(cidade);
-                    alert(cep);
-
-                },
+                     $('#inputBairro').val(bairro);
+                     $('#inputEndereco').val(endereco);
+                     $('#inputCidade').val(cidade);
+                     $('#inputUf').val(uf);
+                 },
                 error: function () {
                     alert('Erro ao fazer a requisição');
                 }
             });
-
         }
 
-</script>
+    </script>
 
 
 

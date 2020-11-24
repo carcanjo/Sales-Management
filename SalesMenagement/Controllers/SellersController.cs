@@ -153,7 +153,7 @@ namespace SalesMenagement.Controllers
 
                 var result = await webService.consultaCEPAsync(cep);
 
-                return Json(JsonConvert.SerializeObject(result));
+                return Json(result);
 
             }
             catch (System.Exception)
