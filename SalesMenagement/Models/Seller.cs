@@ -36,6 +36,15 @@ namespace SalesMenagement.Models
         [DisplayFormat(DataFormatString ="0000-00", ApplyFormatInEditMode = true)]
         [Required(ErrorMessage ="{0} obrigatório")]
         public string CEP { get; set; }
+
+        [Display(Name ="Número")]
+        [Required(ErrorMessage ="{0} obrigatório")]
+        public int NumeroCasa { get; set; }
+        public string Cidade { get; set; }
+        public string Endereco { get; set; }
+        public string Bairro { get; set; }
+        public string Uf { get; set; }
+
         public ICollection<SalesRecord> SalesRecords { get; set; } = new List<SalesRecord>();
 
         public Seller()
@@ -43,7 +52,7 @@ namespace SalesMenagement.Models
 
         }
 
-        public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Departments departments)
+        public Seller(int id, string name, string email, DateTime birthDate, double baseSalary, Departments departments, int departmentsId, string cEP, int numeroCasa, string cidade, string endereco, string bairro, string uf)
         {
             Id = id;
             Name = name;
@@ -51,6 +60,13 @@ namespace SalesMenagement.Models
             BirthDate = birthDate;
             BaseSalary = baseSalary;
             Departments = departments;
+            DepartmentsId = departmentsId;
+            CEP = cEP;
+            NumeroCasa = numeroCasa;
+            Cidade = cidade;
+            Endereco = endereco;
+            Bairro = bairro;
+            Uf = uf;
         }
 
         public void AddSeller(SalesRecord sr)

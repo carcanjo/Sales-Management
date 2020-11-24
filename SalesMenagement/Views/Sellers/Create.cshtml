@@ -59,37 +59,36 @@
             </div>
             <div class="col-md-3">
                 <div class="form-group">
-                    <label class="control-label"> Número</label>
+                    <label asp-for="Seller.NumeroCasa" class="control-label"></label>
                     <input type="text" class="form-control" id="inputNumero" />
                     <span asp-validation-for="Seller.DepartmentsId" class="text-danger"></span>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="form-group">
-                    <label class="control-label"> Cidade</label>
+                    <label asp-for="Seller.Cidade" class="control-label"></label>
                     <input type="text" class="form-control" id="inputCidade" readonly />
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="form-group">
-                    <label class="control-label"> Endereço</label>
+                    <label asp-for="Seller.Endereco" class="control-label"></label>
                     <input type="text" class="form-control" id="inputEndereco" readonly />
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="form-group">
-                    <label class="control-label"> Bairro</label>
+                    <label asp-for="Seller.Bairro" class="control-label"> </label>
                     <input type="text" class="form-control" id="inputBairro" readonly />
                 </div>
             </div>
 
             <div class="col-md-3">
                 <div class="form-group">
-                    <label class="control-label"> UF</label>
+                    <label asp-for="Seller.Uf" class="control-label"></label>
                     <input type="text" class="form-control" id="inputUf" readonly />
                 </div>
             </div>
-
 
             <div class="col-md-12">
                 <input type="submit" value="Salvar" class="btn btn-success" />

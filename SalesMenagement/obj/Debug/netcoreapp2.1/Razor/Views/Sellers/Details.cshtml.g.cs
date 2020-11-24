@@ -166,7 +166,7 @@ using SalesMenagement.Models;
             WriteLiteral("\r\n        </dd>\r\n    </dl>\r\n</div>\r\n<div>\r\n    ");
             EndContext();
             BeginContext(1082, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "72a1e3a266ea40268d4c8684ad01810f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a4c1acd4526e41b08933d214e7ab74e6", async() => {
                 BeginContext(1152, 32, true);
                 WriteLiteral("<i class=\"far fa-edit\"></i> Edit");
                 EndContext();
@@ -202,7 +202,7 @@ using SalesMenagement.Models;
             WriteLiteral(" |\r\n    ");
             EndContext();
             BeginContext(1196, 94, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8372ff9d1fe44636a58fcf4c1095c12d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "150f837b2a0a4406a331820e60646dbf", async() => {
                 BeginContext(1239, 47, true);
                 WriteLiteral("<i class=\"far fa-paper-plane\"></i> Back to List");
                 EndContext();
