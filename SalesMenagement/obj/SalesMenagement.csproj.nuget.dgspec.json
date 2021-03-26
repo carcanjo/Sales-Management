@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\RepositoryArcanjo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {}
+    "C:\\Users\\cleit\\Desktop\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\RepositoryArcanjo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {
+    "C:\\Users\\cleit\\Desktop\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\RepositoryArcanjo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
+        "projectUniqueName": "C:\\Users\\cleit\\Desktop\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
         "projectName": "SalesMenagement",
-        "projectPath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\RepositoryArcanjo\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
+        "projectPath": "C:\\Users\\cleit\\Desktop\\Sales-Management\\SalesMenagement\\SalesMenagement.csproj",
         "packagesPath": "C:\\Users\\cleit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cleit\\OneDrive\\Área de Trabalho\\RepositoryArcanjo\\Sales-Management\\SalesMenagement\\obj\\",
+        "outputPath": "C:\\Users\\cleit\\Desktop\\Sales-Management\\SalesMenagement\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\cleit\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.1"
@@ -29,6 +30,7 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
+            "targetAlias": "netcoreapp2.1",
             "projectReferences": {}
           }
         },
@@ -40,6 +42,7 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
+          "targetAlias": "netcoreapp2.1",
           "dependencies": {
             "Font.Awesome": {
               "target": "Package",
@@ -109,7 +112,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
